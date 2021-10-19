@@ -1,12 +1,10 @@
 import styled from "styled-components";
 
-
 export const Nav = styled.nav`
     width:100%;
     display:flex;
     border-bottom:1px solid grey;
     height:80px;
-    position:fixed;
 `;
 
 export const Ul = styled.ul`

@@ -1,9 +1,10 @@
-import {Form, FormContainer, HomePageContainer, Input} from "../../styles/Home.style";
+import {Form, FormContainer, HomePageContainer, Input} from "../../styles/Home.styles";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
+import {useHistory} from "react-router-dom";
 
 
 function Home() {
+
     function handleSubmit(event) {
         event.preventDefault();
         let username = event.target[0].value;
@@ -15,7 +16,7 @@ function Home() {
             .then(function (response) {
                 let token = response.data.token;
                 window.localStorage.setItem("token", token);
-                useHistory.push("/")
+                useHistory.push('/');
             })
             .catch(function (error) {
                 console.log(error);
